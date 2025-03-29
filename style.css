@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background: white;
+    outline: none;
+}
+
+textarea {
+    flex-grow: 1;
+    resize: none;
+    overflow-y: auto;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #5290af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #4280af;
+}
+
+button:active {
+    background-color: #42709a;
+}
+
+/* モバイルデバイス用の調整 */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+}
